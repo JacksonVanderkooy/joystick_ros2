@@ -186,7 +186,7 @@ class JoystickRos2(Node):
         self.joy.buttons = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         # Joy publisher
-        self.publisher_ = self.create_publisher(Joy, 'joy')
+        self.publisher_ = self.create_publisher(Joy, 'joy', 1)
 
         # logic params
         self.last_event = None
